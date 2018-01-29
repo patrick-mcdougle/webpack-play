@@ -1,0 +1,13 @@
+{
+  "name": "webpack-play",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "build-stats": "webpack --config webpack.config.js --profile --json > stats.json"
+  }
+}
