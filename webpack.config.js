@@ -10,7 +10,8 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'commons'
+      name: 'commons',
+      chunks: ['TopScripts_1', 'TopScripts_2']
     })
   ],
   output: { path: path.resolve(__dirname, "dist"), filename: '[name].js' },
